@@ -12,7 +12,7 @@ def get_args():
                         help='Directory where datasets are located')
 
     # Model config
-    parser.add_argument('--model', '-m', default='wrn-28-10', type=str, choices=('resnet', 'pre-resnet','wrn-28-10'),
+    parser.add_argument('--model', '-m', default='resnet', type=str, choices=('resnet', 'pre-resnet','wrn-28-10'),
                         help='Name of the model (see utils.get_model)')
     parser.add_argument('--model_dir', default='./models',
                         help='Directory of model for saving checkpoint')
